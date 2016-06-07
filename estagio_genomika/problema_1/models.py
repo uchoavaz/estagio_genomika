@@ -4,6 +4,9 @@ from django.db import models
 
 
 class PhenoDbGene(models.Model):
+    '''
+    Modelo do banco da tabela PhenoDbGene
+    '''
     gene_id = models.CharField(
         verbose_name='Gene ID', max_length=10, unique=True)
     gene = models.CharField(verbose_name='Gene', max_length=15)
@@ -23,6 +26,9 @@ class PhenoDbGene(models.Model):
 
 
 class PhenoDbHpo(models.Model):
+    '''
+    Modelo do banco da tabela PhenoDbHpo
+    '''
     hpo_id = models.CharField(
         verbose_name='HPO ID', max_length=10, unique=True)
     hpo_name = models.CharField(verbose_name='Nome do HPO', max_length=255)
@@ -40,3 +46,7 @@ class PhenoDbHpo(models.Model):
 
     def __unicode__(self):
         return self.hpo_name
+
+'''
+Relacao: PhenoDbGene N <--> N PhenoDbHpo
+'''

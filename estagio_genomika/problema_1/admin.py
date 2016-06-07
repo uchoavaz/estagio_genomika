@@ -2,6 +2,10 @@ from django.contrib import admin
 from .models import PhenoDbGene
 from .models import PhenoDbHpo
 
+'''
+Adicao dos Modelos da tabelas a area de Administrador do django
+'''
+
 
 class PhenoDbGeneAdmin(admin.ModelAdmin):
     search_fields = ['gene_id', 'gene']
