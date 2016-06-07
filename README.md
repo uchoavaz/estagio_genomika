@@ -4,6 +4,8 @@
   
 Preparando a Máquina
 ------------
+* Este projeto pode ser rodado em sistema UNIX.Neste caso, a plataforma de teste foi o Ubuntu 14.04 x64
+
 1 - Instalando o pip:
 
     sudo apt-get update
