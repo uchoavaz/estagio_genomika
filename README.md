@@ -15,7 +15,30 @@ Preparando a Máquina
     
     sudo apt-get install git-all
 
-3 - Baixando o projeto :
+3 - Vá um diretório a sua escolha(recomendo 'cd /home/user') e baixe o repositório do projeto com o comando :
 
     git clone https://github.com/uchoavaz/estagio_genomika.git
 
+
+Resolução do Teste
+------------
+
+- Problema 1
+
+  Neste problema, foi pedido pra se fazer um script que baixasse um .txt que esta contido em uma url e depois salva-lo na máquina local e , após isso, salvar todos os dados em um banco de dados local.
+  
+  Normalizei todas as entidades do banco, criando duas tabelas(PhenoDbHpo e PhenoDbGene) que se relacionam com o tipo de N para N e configurei o script em python para que não houvesse repetições de dados em ambas as tabelas.
+  
+  Para rodar o script que "puxa" todas essas informções, vá para o diretório em que foi baixado o projeto.
+  
+  Ex: 'cd /home/user/'
+  
+  Depois, vá para o diretório :
+  
+      cd /estagio_genomika/estagio_genomika
+  
+  e rode o script :
+  
+      python manage.py update_local
+      
+  *Lembrando que são quase 400 mil linhas de dados e o banco é o sqlite3, então, pode-se demorar horas para concluir a tarefa
