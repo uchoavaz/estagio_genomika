@@ -40,5 +40,9 @@ Resolução do Teste
   e rode o script :
   
       python manage.py update_local
-      
+  
+  o download do arquivo gerado('hpo_genes.txt') fica no mesmo diretório do script:
+  
+      /home/user/estagio_genomika/estagio_genomika/problema_1
+  
   *Lembrando que são quase 400 mil linhas de dados e o banco é o sqlite3, então, pode-se demorar horas para concluir a tarefa
