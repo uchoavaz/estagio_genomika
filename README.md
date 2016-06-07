@@ -15,4 +15,5 @@ Preparando a Máquina
 
 3 - Baixando o projeto :
 
-    git clone 
+    git clone git@github.com:uchoavaz/estagio_genomika.git
+
