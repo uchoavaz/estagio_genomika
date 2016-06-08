@@ -19,7 +19,13 @@ Preparando a Máquina
 
     git clone https://github.com/uchoavaz/estagio_genomika.git
 
+4 - Para instalar as dependencias do projeto vá para o diretório raiz do projeto :
 
+    cd /home/user/estagio_genomika/estagio_genomika/home/user/estagio
+  
+  e execute :
+
+    pip install -r requirements.txt
 Resolução do Teste
 ------------
 
@@ -43,7 +49,7 @@ Resolução do Teste
   
   o download do arquivo gerado('hpo_genes.txt') fica salvo no mesmo diretório do script('update_local.py'):
   
-      /home/user/estagio_genomika/estagio_genomika/problema_1
+      cd /home/user/estagio_genomika/estagio_genomika/problema_1
   
   *Lembrando que são quase 400 mil linhas de dados e o banco é o sqlite3 então, pode-se demorar horas para concluir a tarefa. O projeto já está populado, caso não queira esperar e passar para as próximas etapas.
   
@@ -55,4 +61,4 @@ Resolução do Teste
   
   Após ter inserido o comando, as informações relativas a esse HPO_ID estarão disponíveis em um arquivo .json (EX:HP_00000002.json) no mesmo diretório do script('phizz.py'):
   
-        /home/user/estagio_genomika/estagio_genomika/problema_1
+        cd /home/user/estagio_genomika/estagio_genomika/problema_1
