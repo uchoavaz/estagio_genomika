@@ -54,7 +54,7 @@ Resolução do Teste
   
   e entre no diretório raiz do projeto:
   
-      cd /estagio_genomika/estagio_genomika
+      cd estagio_genomika/estagio_genomika
   
   e rode o script :
   
