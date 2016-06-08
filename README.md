@@ -17,7 +17,7 @@ Preparando a Máquina
 
 3 - Vá um diretório a sua escolha(recomendo 'cd /home/user') e baixe o repositório do projeto com o comando :
 
-    git clone https://github.com/uchoavaz/estagio_genomika.git
+    sudo git clone https://github.com/uchoavaz/estagio_genomika.git
 
 4 - Para instalar as dependencias do projeto vá para o diretório raiz do projeto :
 
@@ -25,7 +25,7 @@ Preparando a Máquina
   
   e execute :
 
-    pip install -r requirements.txt
+    sudo pip install -r requirements.txt
 Resolução do Teste
 ------------
 
