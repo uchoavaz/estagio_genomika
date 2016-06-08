@@ -15,11 +15,17 @@ Preparando a Máquina
     
     sudo apt-get install git-all
 
-3 - Vá um diretório a sua escolha(recomendo 'cd /home/user') e baixe o repositório do projeto com o comando :
+3 - Instalando sqlite3 :
+
+    sudo apt-get install sqlite3
+    
+    sudo apt-get install libsqlite3-dev
+
+4 - Vá um diretório a sua escolha(recomendo 'cd /home/user') e baixe o repositório do projeto com o comando :
 
     sudo git clone https://github.com/uchoavaz/estagio_genomika.git
 
-4 - Para instalar as dependencias do projeto vá para o diretório raiz do projeto :
+5 - Para instalar as dependencias do projeto vá para o diretório raiz do projeto :
 
     cd /home/user/estagio_genomika/estagio_genomika
   
@@ -45,7 +51,7 @@ Resolução do Teste
   
   e rode o script :
   
-      python manage.py update_local
+      sudo python manage.py update_local
   
   o download do arquivo gerado('hpo_genes.txt') fica salvo no mesmo diretório do script('update_local.py'):
   
@@ -55,7 +61,7 @@ Resolução do Teste
   
   Agora, o pŕoximo passo é extrair as informações relacionadas a um determinado HPO_ID passado pelo usuário.Utilize o comando a seguir no diretório raiz do projeto('/home/user/estagio_genomika/estagio_genomika') com um HPO_ID:
   
-      python manage.py phizz HPO_ID
+      sudo python manage.py phizz HPO_ID
   
   *Se tentar passar um HPO_ID incorreto ou não existente, o script retorna uma mensagem
   
@@ -69,6 +75,6 @@ Resolução do Teste
   
   No diretório raiz do projeto('/home/user/estagio_genomika/estagio_genomika') execute o comando para rodar o scrip de backup passando um diretório como argumento(Ex:'/home/user/backup_folder') :
       
-        python manage.py backup_local /home/user/backup_folder
+        sudo python manage.py backup_local /home/user/backup_folder
 
   Ele executará o script 'backup_local.py' localizado no diretório ('/home/user/estagio_genomika/estagio_genomika/problema_2'). Este script cria a pasta 'backup_folder' no diretório '/home/user', verifica se existem arquivos com 3 dias ou mais de criação, exclui os mesmos se a afirmação for verdadeira e insere nela um arquivo de backup do banco de dados (sqlite3) com o formato .bak e o nomeia com a sua data de execução(Ex: 'hpo_20160607.bak')
