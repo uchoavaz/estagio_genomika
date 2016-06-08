@@ -30,7 +30,7 @@ Preparando a Máquina
 
 4 - Vá um diretório a sua escolha(recomendo 'cd /home/user') e baixe o repositório do projeto com o comando :
 
-    sudo git clone https://github.com/uchoavaz/estagio_genomika.git
+    git clone https://github.com/uchoavaz/estagio_genomika.git
 
 5 - Para instalar as dependencias do projeto vá para o diretório raiz do projeto :
 
