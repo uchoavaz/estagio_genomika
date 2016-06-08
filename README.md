@@ -21,7 +21,7 @@ Preparando a Máquina
 
 4 - Para instalar as dependencias do projeto vá para o diretório raiz do projeto :
 
-    cd /home/user/estagio_genomika/estagio_genomika/home/user/estagio
+    cd /home/user/estagio_genomika/estagio_genomika
   
   e execute :
 
