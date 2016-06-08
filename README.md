@@ -80,7 +80,7 @@ Resolução do Teste
   
   Neste problema foi pedido um script que fizesse um processo automatizado de backup do banco de dados em um diretorio escolhido pelo usuário
   
-  No diretório raiz do projeto('/home/user/estagio_genomika/estagio_genomika') execute o comando para rodar o scrip de backup passando um diretório como argumento(Ex:'/home/user/backup_folder') :
+  No diretório raiz do projeto('cd /home/user/estagio_genomika/estagio_genomika') execute o comando para rodar o scrip de backup passando um diretório como argumento(Ex:'/home/user/backup_folder') :
       
         sudo python manage.py backup_local /home/user/backup_folder
 
