@@ -85,3 +85,12 @@ Resolução do Teste
         sudo python manage.py backup_local /home/user/backup_folder
 
   Ele executará o script 'backup_local.py' localizado no diretório ('/home/user/estagio_genomika/estagio_genomika/problema_2'). Este script cria a pasta 'backup_folder' no diretório '/home/user', verifica se existem arquivos com 3 dias ou mais de criação, exclui os mesmos se a afirmação for verdadeira e insere nela um arquivo de backup do banco de dados (sqlite3) com o formato .bak e o nomeia com a sua data de execução(Ex: 'hpo_20160607.bak')
+
+- Desafio
+
+  O tutorial do desafio está no README.md do repositório :
+  
+    https://github.com/uchoavaz/vagrant_lib
+  
+  Decidi fazer com o vagrant.
+  
