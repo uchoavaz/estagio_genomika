@@ -1,8 +1,9 @@
 
 # -*- coding: utf-8 -*-
-import urllib2
+import urllib
 from .models import PhenoDbHpo
 from .models import PhenoDbGene
+import os
 
 '''
 Esta classe faz uso do txt, que esta na web, e grava seus dados
@@ -10,7 +11,7 @@ no banco de dados local da maquina. Ele distribui os dados entre as tabelas
 PhenoDbHpo e PhenoDbGene e faz suas relacoes (N <--> N).Ela nao deixa que os
 dados se repitam em cada tabela, pois ha um tratamento, caso suas forem quebradas.
 '''
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 class UpdateLocal():
 
@@ -24,12 +25,20 @@ class UpdateLocal():
 
     def download_data(self, txt_url):
         '''
-        Esta funcao faz a leitura de todas as linhas do txt
+        Esta funcao baixa o txt para o projeto e
+        faz a leitura de todas as linhas do txt
         '''
-        data = urllib2.urlopen(txt_url)
-        for line in data:
+        file_name = 'hpo_genes.txt'
+        file_location = (BASE_DIR + '/problema_1/' + file_name)
+
+        urllib.urlretrieve(txt_url, file_location)
+
+        txt_file = open(file_location)
+        for line in txt_file.readlines():
             data = line.split('\t')
             self.save(data)
+
+        txt_file.close()
 
     def save(self, data):
         '''

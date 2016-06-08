@@ -7,7 +7,7 @@ import sys
 class Command(BaseCommand):
 
     def add_arguments(self, hpo):
-        hpo.add_argument('poll_id', nargs='+', type=str)
+        hpo.add_argument('dir', nargs='+', type=str)
 
     def handle(self, *args, **options):
         days_delete = 2

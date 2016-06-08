@@ -1,2 +1,1 @@
 django==1.9.7
-psycopg2==2.5.4

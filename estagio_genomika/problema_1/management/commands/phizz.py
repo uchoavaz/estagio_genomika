@@ -3,7 +3,9 @@ from django.core.management import BaseCommand
 from problema_1.phizz import Phizz
 import sys
 
-
+'''
+Classe que gerencia os argumentos no manage.py
+'''
 class Command(BaseCommand):
     '''
     Funcao para adicionar um argumento pelo comando no terminal
