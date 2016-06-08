@@ -64,7 +64,7 @@ Resolução do Teste
   
       cd /home/user/estagio_genomika/estagio_genomika/problema_1
   
-  *Lembrando que são quase 400 mil linhas de dados e o banco é o sqlite3 então, pode-se demorar horas para concluir a tarefa. O projeto já está populado, caso não queira esperar e passar para as próximas etapas.
+  *Lembrando que são quase 400 mil linhas de dados e o banco é o sqlite3 então, pode-se demorar várias horas para concluir a tarefa. O projeto já está populado, caso não queira esperar e passar para as próximas etapas.
   
   Agora, o pŕoximo passo é extrair as informações relacionadas a um determinado HPO_ID passado pelo usuário.Utilize o comando a seguir no diretório raiz do projeto('/home/user/estagio_genomika/estagio_genomika') com um HPO_ID:
   
