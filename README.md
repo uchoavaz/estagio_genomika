@@ -62,3 +62,13 @@ Resolução do Teste
   Após ter inserido o comando, as informações relativas a esse HPO_ID estarão disponíveis em um arquivo .json (EX:HP_00000002.json) no mesmo diretório do script('phizz.py'):
   
         cd /home/user/estagio_genomika/estagio_genomika/problema_1
+
+- Problema 2
+  
+  Neste problema foi pedido um script que fizesse um processo automatizado de backup do banco de dados em um diretorio escolhido pelo usuário
+  
+  No diretório raiz do projeto('/home/user/estagio_genomika/estagio_genomika') execute o comando para rodar o scrip de backup passando um diretório como argumento(Ex:'/home/user/backup_folder') :
+      
+        python manage.py backup_local /home/user/backup_folder
+
+  Ele executará o script 'backup_local.py' localizado no diretório ('/home/user/estagio_genomika/estagio_genomika/problema_2'). Este script cria a pasta 'backup_folder' no diretório '/home/user', verifica se existem arquivos com 3 dias ou mais de criação, exclui os mesmos se a afirmação for verdadeira e insere nela um arquivo de backup do banco de dados (sqlite3) com o formato .bak e o nomeia com a sua data de execução(Ex: 'hpo_20160607.bak')
