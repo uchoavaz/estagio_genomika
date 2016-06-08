@@ -1,10 +1,17 @@
 #Teste de Seleção da Genomika
 
   Neste arquivo estará presente todo o passo-a-passo para se realizar a execução dos scripts solicitados nos problemas deste Teste de uma forma bem detalhada.
-  
+
+Requisitos para o projeto
+------------
+
+- Django 1.9.7
+
+- sqlite3
+
 Preparando a Máquina
 ------------
-* Este projeto pode ser rodado em sistema UNIX.Neste caso, a plataforma de teste foi o Ubuntu 14.04 x64
+* Este projeto pode ser rodado em sistemas UNIX.Neste caso, a plataforma de teste foi o Ubuntu 14.04 x64
 
 1 - Instalando o pip:
 
