@@ -91,7 +91,7 @@ Desafio
 
   O tutorial do desafio está no README.md do repositório :
   
-    https://github.com/uchoavaz/vagrant_lib
+  https://github.com/uchoavaz/vagrant_lib
   
   Decidi fazer com o vagrant.
   
