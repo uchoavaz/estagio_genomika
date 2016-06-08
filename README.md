@@ -48,7 +48,7 @@ Resolução do Teste
   
   Normalizei todas as entidades do banco, criando duas tabelas(PhenoDbHpo e PhenoDbGene) que se relacionam com o tipo de N para N e configurei o script em python para que não houvesse repetições de dados em ambas as tabelas.
   
-  Para rodar o script que "puxa" todas essas informções, vá para o diretório em que foi baixado o projeto.
+  Para rodar o script que "puxa" todas essas informações, vá para o diretório em que foi baixado o projeto.
   
   Ex: 'cd /home/user/'
   
